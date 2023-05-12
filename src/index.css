@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header span .bx {
+  font-size: 30px;
+}
+header {
+  width: auto;
+  height: 50px;
+  background: #f9f3f1;
+}
+
+.banner {
+  width: auto;
+  height: 500px;
+  background-image: url("./assets/bannerimg.png");
+  background-size: cover;
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 104px;
+  color: #ffffff;
+}
+.welcome {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+.welcome .row {
+  padding: 5rem 0rem;
+  width: auto;
+}
+.welcome .left-wel {
+  position: relative;
+}
+.welcome .left-wel .rectangle {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  width: 218px;
+  height: 347px;
+  background: #ffffff;
+  border: 10px solid #b58152;
+  border-radius: 14px;
+}
+
+.welcome .left-wel .img-wel {
+  background-image: url("./assets/welcome.png");
+  position: absolute;
+  width: 510px;
+  height: 310px;
+}
+
+.welcome .right-wel {
+  text-align: left;
+  position: relative;
+}
+
+.welcome .right-wel .label-wel {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  color: #000000;
+}
+.welcome .right-wel .title-wel {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bold;
+  color: #000000;
+}
+.welcome .right-wel .para-wel {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.service {
+  background: #E5E5E5;
+  padding: 5rem;
+}
+
+.service .service-flow {
+  position: relative;
+}
+.service .service-flow .title-flow {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #000000;
+}
+.service .service-flow .text-flow {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #555555;
+}
+
+.service .service-flow .dig-div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  z-index: 99;
+}
+.service .service-flow .dig-div .dig-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+.service .service-flow .dig-div .dig-title{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #555555;
+}
+.service .service-flow .dig-div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 1px;
+  background-color: #a2886a;
+}
+.service .dig-div .digone {
+  background: #a2886a;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service .dig-div .dig-main .digtwo,
+.digthree,
+.digfour,
+.digfive {
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .team-header {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #b58152;
+}
+
+.team .team-para {
+  
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #555555;
+}
+
+.team .member {
+  position: relative;
+  width: 425px;
+  height: 490px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+.team .member .social {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  opacity: 1;
+  transition: ease-in-out 0.3s;
+  width: 300px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px 25px 0px 0px;
+}
+.team .member .social #social-type{
+  margin: 5px 0px 2px 0px;
+  font-size: 16px;
+  color: #b58152;
+}
+.team .member .social #social-name{
+  margin: 2px 0px 2px 0px;
+  font-size: 16px;
+  color: #111;
+  font-weight: 700;
+  font-family: 'Jost', sans-serif;
+font-family: 'Old Standard TT', serif;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #124265;
+}
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+/*--------------------------------------------------------------
+# Departments
+--------------------------------------------------------------*/
+.subservice{
+  padding: 10px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5e5e5;
+  width: 100%;
+}
+.departments {
+  
+  padding: 15px 0px 15px 0px;
+  overflow: hidden;
+ background: #fff;
+}
+.departments .nav-tabs {
+  border: 0;
+}
+.departments .nav-item{
+  padding: 0px;
+}
+.departments .nav-link {
+  margin: 5px 0px;
+height: 46px;
+padding: 0px !important;
+background: #F3F0EB;
+border-radius: 0px 20px 20px 0px;
+display: flex;
+justify-content: left;
+align-items: center;
+color: #000000;
+font-weight: bold;
+}
+.departments .nav-link:hover {
+  background: #A2886A;
+
+}
+.departments .nav-link.active {
+  background: #A2886A;
+  color: white;
+}
+.departments .department-img{
+  
+border-radius: 50%;
+border: 10px solid #F6F5F1;;
+}
+.departments #department-header{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 46px;
+letter-spacing: 0.05em;
+color: #000000;
+}
+.departments .department-info{ 
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+color: #555555;
+}
+.departments .small-text{
+  font-size: 16px;
+  color: #b58152 !important;
+  font-weight: bold;
+}
+.departments .arrow{
+  width: 36px;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #A2886A;
+border-radius: 0px 20px 20px 0px;
+}
+.departments .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+.departments .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c4964;
+}
+.departments .details p {
+  color: #777777;
+}
+.departments .details p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .departments .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+  .departments .nav-link.active {
+    color: #000000;
+  }
+}
+
+@media (max-width: 768px){
+
+  .dig-main{
+    margin: 20px;
+    
+  }
+  .dig-div{
+    flex-direction: column;
+  }
+  .dig-div::after{
+    display: none;
+  }
+  #banner-text{
+    font-size: 50px;
+    text-align: center;
+  }
+}
